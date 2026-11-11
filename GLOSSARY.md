@@ -21,7 +21,7 @@ The 14 calendar days after a purchase during which a Learner may submit a Refund
 _Avoid_: Cancel window, cancellation period
 
 **Refund Eligibility**:
-Whether a Learner may submit a Refund Request for a purchase: inside the Refund Window, under 2 hours watched, under half the lessons completed, not a claimed team seat, and no Pending or Declined Refund Request already on that purchase. A Withdrawn Refund Request does not count against it. It is judged at the moment of submitting.
+Whether a Learner may submit a Refund Request for a purchase: inside the Refund Window, under 2 hours watched, under half the lessons completed, not a claimed team seat, and no Refund Request already on that purchase other than a Withdrawn one. It is judged at the moment of submitting.
 _Avoid_: Cancellation offer
 
 **Refund Amount**:

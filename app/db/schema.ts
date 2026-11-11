@@ -31,10 +31,12 @@ export enum QuestionType {
   TrueFalse = "true_false",
 }
 
+/** The state of a Refund Request — see GLOSSARY.md. */
 export enum RefundStatus {
-  Requested = "requested",
+  Pending = "pending",
   Approved = "approved",
   Declined = "declined",
+  Withdrawn = "withdrawn",
 }
 
 export enum TeamMemberRole {
@@ -239,10 +241,10 @@ export const refunds = sqliteTable(
     status: text("status")
       .notNull()
       .$type<RefundStatus>()
-      .default(RefundStatus.Requested),
+      .default(RefundStatus.Pending),
     // The learner's own words, in the box on the course page.
     reason: text("reason").notNull(),
-    // Null until someone approves — a declined request refunds nothing.
+    // The Refund Amount, set when staff approve. Null for every other status.
     amountRefunded: integer("amount_refunded"),
     requestedAt: text("requested_at")
       .notNull()
